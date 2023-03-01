@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main()
+{
+
+           int minutos,valor,excedido;
+
+           printf("Digite a quantidade de minutos ");
+           scanf("%d", &minutos);
+
+           excedido = 0;
+
+           if (minutos <= 100) {
+                valor = 50;
+           }
+            else {
+                excedido = minutos - 100;
+                valor = excedido * 2 + 50;
+            }
+
+            printf("valor a pagar = %d\n", valor);
+
+            return 0;
+            
+}
